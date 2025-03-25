@@ -2,14 +2,17 @@
   width: 100%;
   display: flex;
   align-items: stretch;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .order-img-box,
 .how-to-order {
-  flex: 0 0 50%;
+  flex: 1 1 50%;
   box-sizing: border-box;
   min-height: 640px;
+  min-width: 300px;
+  transition: all 0.3s ease;
 }
 
 .order-img-box {
@@ -20,17 +23,20 @@
   justify-content: center;
   align-items: center;
   padding: 100px;
+  filter: brightness(0.80); 
 }
 
 .order-img-box img {
-  width: 440px;
-  height: 560px;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
 }
 
 .how-to-order {
   background-color: var(--green);
   padding: 100px;
-  /* border-radius: var(--image-radius); */
   color: var(--white);
 }
 
@@ -61,7 +67,7 @@
   background-color: var(--white);
   border-radius: 15px;
   padding: 17px 25px 17px 24px; /* 5px fazla olmasinin sebebi box-shadowun paddinge dahil olmamasi */
-  width: 440px;
+  width: 100%;
   height: auto;
 }
 
@@ -90,3 +96,44 @@
 .step-text .body-2 {
   color: var(--black);
 }
+
+@media screen and (max-width: 768px) {
+  .order-container {
+    flex-wrap: wrap; 
+  }
+  
+  .order-img-box, 
+  .how-to-order {
+    flex: 1 1 100%;
+    min-height: auto; 
+    padding: 50px;
+  }
+  
+  .order-img-box img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .order-container{
+    flex-direction: column;
+  }
+
+  .order-img-box, 
+  .how-to-order {
+    padding: 60px;
+    min-height: 500px; 
+  }
+
+  .order-img-box img {
+    width: 350px;
+    height: 450px;
+  }
+
+  .steps {
+    margin-top: 80px;
+  }
+}
+
