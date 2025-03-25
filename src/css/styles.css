@@ -7,29 +7,80 @@
 @import url(./yourorder.css);
 @import url(./hero.css);
 
-body{
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*{
-    box-sizing: border-box;
-  }
-  img{
-    display: block;
-  }
-.container{
-    display: flex;
-    justify-content: center;
-    width: 1158px;
-    margin: 0 auto;
-    flex-direction: column;
+
+:root {
+  --chianti: #7a3145;
+  --green: #576f35;
+  --white: #fbfbfb;
+  --blush: #d4bfc4;
+  --grey: #858585;
+  --black: #141414;
+  --image-radius: 20px;
 }
-.ol, ul  {
+
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1280px;
+  flex-direction: column;
+}
+
+.ol,
+ul,
+li {
   list-style-type: none;
-  
 }
-h1,h2,h3,h4,h5,h6{
+
+a {
+  text-decoration: none;
+}
+
+/* =============== TEXTS =============== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
-p{
+p {
   margin: 0;
+}
+
+h3 {
+  font-weight: 600; /* semibold */
+  font-size: 32px;
+  letter-spacing: -1.5%;
+  line-height: 32px;
+}
+
+.body-1 {
+  font-weight: 500; /* medium */
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.body-2 {
+  font-weight: 700; /* bold */
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
 }
