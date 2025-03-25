@@ -9,7 +9,7 @@
 .how-to-order {
   flex: 0 0 50%;
   box-sizing: border-box;
-  min-height: 640px;
+  min-height: 640px ;
 }
 
 .order-img-box {
