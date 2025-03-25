@@ -18,6 +18,9 @@ body{
 .container{
     display: flex;
     justify-content: center;
+    width: 1158px;
+    margin: 0 auto;
+    flex-direction: column;
 }
 .ol, ul  {
   list-style-type: none;

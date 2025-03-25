@@ -9,7 +9,8 @@ async function loadHTML(id, file) {
     }
   }
 
-  loadHTML("header-hero","./src/partials/Header-hero.html");
+  loadHTML("header","./src/partials/Header.html");
+  loadHTML("hero","./src/partials/Hero.html");
   loadHTML("howitworks","./src/partials/Howitworks.html")
   loadHTML("advertisement","./src/partials/Advertisement.html")
   loadHTML("vegetables","./src/partials/Vegetables.html")
