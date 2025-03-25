@@ -1,0 +1,21 @@
+@import url(./advertisement.css);
+@import url(./footer.css);
+@import url(./header-hero.css);
+@import url(./howitworks.css);
+@import url(./reviews.css);
+@import url(./vegetables.css);
+@import url(./yourorder.css);
+
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+  }
+  img{
+    display: block;
+  }
+.container{
+    display: flex;
+    justify-content: center;
+}
