@@ -1,46 +1,78 @@
-<div class="container">
-          <div class="order-container">
-            <div class="order-img-box">
-              <img
-                src="../../img/woman-kitchen.png"
-                alt="Woman in kitchen with vegetables"
-              />
-            </div>
-            <div class="how-to-order">
-              <h3>
-                TO ORDER YOUR <span>VEGETABLE</span> <br />BASKET, SIMPLY FOLLOW <br />THESE <span>EASY STEPS</span>
-              </h3>
-              <p class="description body-1">
-                Our baskets are assembled with care and delivered straight to
-                your doorstep, so you can enjoy the taste of fresh fruit without
-                ever leaving your home.
-              </p>
-              <div class="steps">
-                <div class="step">
-                  <div class="step-number">1</div>
-                  <p class="step-text body-1">
-                    Just choose <span class="body-2">the vegetable</span> you
-                    want to order br by clicking on the checkboxes
-                    <span class="body-2">next to it.</span>
-                  </p>
-                </div>
-
-                <div class="step">
-                  <div class="step-number">2</div>
-                  <p class="step-text body-1">
-                    Click on <span class="body-2">the basket</span> and fill out
-                    the form.
-                  </p>
-                </div>
-                <div class="step">
-                  <div class="step-number">3</div>
-                  <p class="step-text body-1">
-                    Sit back and relax! Your
-                    <span class="body-2">fresh vegetables</span> basket will be
-                    delivered.
-                  </p>
-                </div>
-              </div>
-            </div>
+<section id="howitworks" class="how-it-works">
+  <div class="desk-only-hiw">
+    <div class="img-hiw">
+      <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ../../img/woman-kitchen.png    1x,
+                    ../../img/woman-kitchen.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ../../img/woman-kitchen-tab.png    1x,
+                    ../../img/woman-kitchen-tab.png 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ../../img/woman-kitchen-mob.png    1x,
+                    ../../img/woman-kitchen-mob.png 2x
+                  "
+                />
+                <img
+                  class="woman-hiw"
+                  src="../../img/woman-kitchen.png"
+                  alt="Woman in kitchen with vegetables"
+                />
+              </picture>
+    </div>
+    <div class="content-hiw">
+      <div class="text-cont-hiw">
+        <h2 class="title-hiw">
+          To order your <span class="s-grey">vegetable</span> basket, simply
+          follow these <span class="s-grey">easy steps</span>
+        </h2>
+        <p class="text-hiw">
+          Our baskets are assembled with care and delivered straight to your
+          doorstep, so you can enjoy the taste of fresh fruit without ever
+          leaving your home.
+        </p>
+      </div>
+      <ol class="steps-hiw">
+        <li class="items-hiw">
+          <div class="item-steps-hiw">
+            <span class="counter-steps-hiw"></span>
+            <p class="action-items-hiw">
+              Just choose <span class="s-black">the vegetable</span> you want to
+              order by clicking on the checkboxes
+              <span class="s-black">next to it</span>.
+            </p>
           </div>
-        </div>
+        </li>
+        <li class="items-hiw">
+          <div class="item-steps-hiw">
+            <span class="counter-steps-hiw"></span>
+            <p class="action-items-hiw">
+              Click on <span class="s-black">the basket</span> and fill out the
+              form.
+            </p>
+          </div>
+        </li>
+        <li class="items-hiw">
+          <div class="item-steps-hiw">
+            <span class="counter-steps-hiw"></span>
+            <p class="action-items-hiw">
+              Sit back and relax! Your
+              <span class="s-black">fresh vegetables</span> basket will be
+              delivered.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
