@@ -1,12 +1,3 @@
-:root {
-    --chianti: #7a3145;
-    --green: #576f35;
-    --white: #fbfbfb;
-    --blush: #d4bfc4;
-    --grey: #858585;
-    --black: #141414;
-    --image-radius: 20px;
-}
 
 .reviews-item {
     background-color: var(--white);
@@ -16,7 +7,6 @@
 
 .reviews-header {
     width: 553px;
-
 }
 
 .reviews-header>h2 {
@@ -64,8 +54,6 @@
     align-items: center;
     width: 344px;
     height: 248px;
-
-
 }
 
 .card-container>h4 {

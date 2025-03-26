@@ -1,3 +1,87 @@
-.vegatables{
-    background-color: chocolate;
+.vegetables-background {
+  background-color: var(--chianti);
+  padding: 100px;
+}
+
+.title {
+  margin-bottom: 52px;
+  color: var(--white);
+}
+
+.title h2 {
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.title h2 span {
+  color: var(--blush);
+}
+
+.title p {
+  margin-top: 24px;
+  margin-bottom: 52px;
+  max-width: 600px;
+  color: var(--white);
+}
+
+.vegetables-cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 28px;
+}
+
+.vegetables-card {
+  background-color: var(--white);
+  color: var(--chianti);
+  border-radius: 40px;
+  padding: 32px;
+  text-align: left;
+  width: calc((100% - 48px) / 3);
+}
+
+.vegetables-card h3 {
+  color: var(--chianti);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.vegetables-card p {
+  margin-bottom: 12px;
+  color: var(--black);
+}
+
+.vegetables-card img {
+  width: 100%;
+  border-radius: 40px;
+  object-fit: contain;
+}
+
+/*MOBİL*/
+@media (min-width: 375px) {
+  .vegetables-card {
+    width: 100%;
+  }
+  .vegetables-cards ul {
+    row-gap: 20px;
+  }
+}
+/*TABLET*/
+@media (min-width: 768px) {
+  .vegetables-card {
+    width: calc((100% - 24px) / 2);
+  }
+  .vegetables-cards ul {
+    row-gap: 28px;
+  }
+}
+/* BİLGİSAYAR*/
+@media (min-width: 1280px) {
+  .vegetables-card {
+    width: calc((100% - 48px) / 3);
+  }
+  .vegetables-cards ul {
+    gap: 24px;
+    row-gap: 28px;
+  }
 }
