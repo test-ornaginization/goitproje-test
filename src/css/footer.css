@@ -1,2 +1,44 @@
+
 .footer{
-    background-color: rgb(216, 5, 198);}
+    background-color:#7a3145 ;
+    color: white;
+}
+.footerheader{
+   margin-top: 24px;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 100px ;
+}
+.footer-left{
+    width: 265px;
+    height: 104px;
+}
+.footer-center{
+   display: flex;
+   flex-direction: column;
+   margin-left: 250px;
+   
+}
+.centerHeader{
+  margin-bottom: 24px;
+}
+.footer-right{
+    margin-left: 121px;
+    height: 84px;
+}
+.rightcontent{
+     margin-bottom: 24px;
+}
+.footer-last{
+   
+    color:#d4bfc4;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.lastcontent{
+ margin: 54px 100px;
+}
