@@ -4,6 +4,7 @@
 
 .img-hiw {
   padding: 40px 20px;
+  filter: brightness(0.80);
 }
 
 .steps-hiw {
@@ -39,10 +40,6 @@
 .title-hiw {
   max-width: 335px;
   color: var(--white);
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.01em;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -54,9 +51,6 @@
 
 .text-hiw {
   color: var(--white);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.43;
   text-align: left;
   max-width: 335px;
   margin-bottom: 40px;
@@ -149,7 +143,7 @@
   .how-it-works {
     background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
   }
-  .desk-only-hiw {
+  .hiw {
     display: flex;
   }
 
