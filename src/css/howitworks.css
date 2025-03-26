@@ -1,9 +1,9 @@
 .how-it-works {
   background: linear-gradient(to bottom, #7a3145 56%, #576f35 50%);
 }
+
 .img-hiw {
   padding: 40px 20px;
-  background-color: var(--chianti);
 }
 
 .steps-hiw {

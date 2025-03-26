@@ -1,4 +1,171 @@
-.yourorder {
-    background-color: cornflowerblue;
-    color: blueviolet
+
+#yourorder{
+    box-sizing: border-box;
+    width: 1280px;
+    height: 1036px;
+    top: 3908px;
+    padding: 100px;
+    gap: 52px 0;
+    background-color: #576f35;
 }
+
+.title4{
+    color:white;
+    width: 751px;
+    height: 128px;
+    line-height: 36px;
+    font-size: 40px;
+    letter-spacing: -1.5%;
+    text-decoration: none;
+    
+}
+.title4 .title4-2{
+    line-height: 20px;
+}
+.section4-title{
+    width: 751px;
+    height: 192px;
+    gap: 24px;
+    background-color:#576f35;
+}
+.title4-2{
+    width: 742px;
+    height: 40px;
+    color: white;
+    line-height: 20px;
+    letter-spacing: 0%;
+    font-size: 16px;
+}
+
+.section4-contacts {
+    display: flex;
+    width: 1080px;
+    height: 592px;
+    gap:32px;  
+}
+
+.section4-contacts-title{
+    width: 524px;
+    height: 592px;
+    border-radius: 30px;
+    top:52px;
+    right: 48px;
+    bottom: 52px;
+    left: 48px;
+    gap: 10px;
+    background-color: white;
+    justify-items: center;
+    font-weight: bold;
+    font-family: sans-serif;   
+}
+.name4{
+    width: 428px;
+    height: 128px;
+    font-size: 32px;
+    justify-content: center;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: -1.5%;
+    text-align: left;
+    margin-bottom: 69px;
+}
+.button-container{
+    display: grid;
+    width: 428px;
+    height: 232px;
+    top:52px;
+    right: 48px;
+    bottom: 52px;
+    left: 48px;
+    gap: 16px;
+    text-align:end;
+}
+.button4-name{
+    width: fixed;
+    height: 52px;
+    border-radius: 30px;
+    top: 16px;
+    right: 345px;
+    bottom:16px;
+    left: 16px;
+    gap: 10px;
+    text-align:left;
+    background-color: white;
+}
+.button4-name-comment{
+    width: 428px;
+    height: 96px;
+    border-radius: 15px;
+    top: 16px;
+    right: 345px;
+    bottom: 16px;
+    left: 16px;
+    gap: 10px;
+    text-align:left;
+    background-color: white;
+    
+   
+}
+.button4-name-send{
+    width: fixed;
+    height: 52px;
+    border-radius: 30px;
+    top: 16px;
+    right: 346px;
+    bottom:16px;
+    left: 16px;
+    gap: 10px;
+    justify-content: flex-start;
+    background-color: #7a3145;
+    color: white;
+    
+}
+
+.title4-3{
+
+    color:#d4bfc4; 
+    width: 243px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 100px;
+    letter-spacing: 0%;
+    margin-left: 32px;
+}
+.section4-title .title4 span{
+    color: var(--blush);
+}
+.title4-4{
+    width: 386px;
+    height: 20px;
+    gap: 12px;
+    margin-left: -8px;
+    color: white;
+    line-height: 100px;  
+}
+
+.section4-contacts-social{
+    
+    background-color: #7a3145;
+    width: 524px;
+    height: 592px;
+    border-radius: 30px;
+    top:52px;
+    right: 48px;
+    bottom: 52px;
+    left: 48px;
+    gap: 10px 0;
+    text-align: center;
+}
+.pic{
+    width: 428px;
+    height: 352px;
+    border-radius: 15px;
+    color: #141414;
+    margin-top: 56px;
+    
+}
+.title4-3{
+
+}
+
+
