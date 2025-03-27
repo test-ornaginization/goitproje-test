@@ -1,140 +1,166 @@
-.order-container {
-  width: 100%;
-  display: flex;
-  align-items: stretch;
-  flex-wrap: nowrap;
-  overflow: hidden;
+.how-it-works {
+  background: linear-gradient(to bottom, #7a3145 56%, #576f35 50%);
 }
 
-.order-img-box,
-.how-to-order {
-  flex: 1 1 50%;
-  box-sizing: border-box;
-  min-height: 640px;
-  min-width: 300px;
-  transition: all 0.3s ease;
-
+.img-hiw {
+  padding: 40px 20px;
+  filter: brightness(0.80);
 }
 
-.order-img-box {
-  background-color: var(--chianti);
-  /* border-radius: var(--image-radius); */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  filter: brightness(0.80); 
+.steps-hiw {
+  counter-reset: count;
 }
 
-.order-img-box img {
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+.items-hiw {
+  counter-increment: count;
+}
+
+.counter-steps-hiw::before {
+  content: counter(count);
+  display: block;
+}
+
+.woman-hiw {
   border-radius: 30px;
+  margin: 0 auto;
 }
 
-.how-to-order {
+.content-hiw {
+  padding: 80px 20px;
+  margin: 0 auto;
   background-color: var(--green);
-  padding: 100px;
+}
+.text-cont-hiw {
+  margin-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-hiw {
+  max-width: 335px;
   color: var(--white);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.how-to-order h3 {
-  margin-bottom: 24px;
-  white-space: pre-line;
-}
-
-.how-to-order h3 span {
+.s-grey {
   color: var(--blush);
 }
 
-.description {
+.text-hiw {
   color: var(--white);
+  text-align: left;
+  max-width: 335px;
+  margin-bottom: 40px;
 }
 
-.steps {
+.steps-hiw {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-steps-hiw {
+  max-width: 335px;
+  display: flex;
+  align-items: center;
   gap: 24px;
-  margin-top: 104px;
-}
-
-.step {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: var(--white);
   border-radius: 15px;
-  padding: 17px 25px 17px 24px; /* 5px fazla olmasinin sebebi box-shadowun paddinge dahil olmamasi */
-  width: 100%;
-  height: auto;
+  background-color: var(--white);
+  padding: 12px 24px;
 }
 
-.step-number {
+.counter-steps-hiw {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-shrink: 0;
-  background-color: var(--chianti);
-  color: var(--white);
-  font-weight: 600;
-  font-size: 18px;
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
+  border: 5px solid rgb(212, 191, 196);
   border-radius: 50%;
-  box-shadow: 0 0 0 5px var(--blush);
-  margin-right: 18px;
+  background: var(--chianti);
+  text-align: center;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.11;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
 }
 
-.step-text {
-  font-size: 16px;
-  line-height: 20px;
+.action-items-hiw {
   color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-.step-text .body-2 {
+.s-black {
+  font-weight: 700;
   color: var(--black);
 }
 
-@media screen and (max-width: 768px) {
-  .order-container {
-    flex-wrap: wrap; 
+@media screen and (min-width: 768px) {
+  .img-hiw {
+    padding: 100px 64px;
   }
-  
-  .order-img-box, 
-  .how-to-order {
-    flex: 1 1 100%;
-    min-height: auto; 
-    padding: 50px;
+
+  .content-hiw {
+    padding: 100px 164px;
   }
-  
-  .order-img-box img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
+
+  .item-steps-hiw {
+    min-width: 440px;
+    padding: 12px 15px 12px 24px;
+  }
+
+  .title-hiw {
+    min-width: 440px;
+
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .text-hiw {
+    min-width: 440px;
+    font-size: 16px;
+    margin-bottom: 52px;
+  }
+
+  .action-items-hiw {
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .order-container{
-    flex-direction: column;
+@media screen and (min-width: 1280px) {
+  .how-it-works {
+    background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
+  }
+  .hiw {
+    display: flex;
   }
 
-  .order-img-box, 
-  .how-to-order {
-    padding: 60px;
-    min-height: 500px; 
+  .img-hiw {
+    max-width: 640px;
+    padding: 100px;
+    margin: 0 0 0 auto;
   }
 
-  .order-img-box img {
-    width: 350px;
-    height: 450px;
+  .content-hiw {
+    max-width: 640px;
+    height: 100%;
+    padding: 100px;
+    margin: 0 auto 0 0;
   }
 
-  .steps {
-    margin-top: 80px;
+  .text-hiw {
+    margin-bottom: 104px;
   }
 }
-
