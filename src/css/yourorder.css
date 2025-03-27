@@ -1,6 +1,7 @@
 
-#yourorder{
-    box-sizing: border-box;
+ .section4-title , .section4-contacts{
+  
+    box-sizing:border-box;
     max-width: 1280px;
     margin: 0 auto;
     padding: 100px;
@@ -21,7 +22,7 @@
 }
 
 .section4-title{
-    width: 751px;
+    width: 1280px;
     height: 192px;
     gap: 24px;
     background-color:#576f35;
@@ -37,7 +38,7 @@
     line-height: 20px;
     letter-spacing: 0%;
     font-size: 16px;
-    margin-top: 32px;
+    margin-t1op: 32px;
 }
 
 .section4-contacts {
