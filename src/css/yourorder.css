@@ -1,9 +1,9 @@
 
-#yourorder{
-    box-sizing: border-box;
-    width: 1280px;
-    height: 1036px;
-    top: 3908px;
+ .section4-title , .section4-contacts{
+  
+    box-sizing:border-box;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 100px;
     gap: 52px 0;
     background-color: #576f35;
@@ -16,17 +16,19 @@
     line-height: 36px;
     font-size: 40px;
     letter-spacing: -1.5%;
-    text-decoration: none;
+    text-decoration: none;  
+    margin-bottom: 50px;
     
 }
-.title4 .title4-2{
-    line-height: 20px;
-}
 .section4-title{
-    width: 751px;
+    width: 1280px;
     height: 192px;
     gap: 24px;
     background-color:#576f35;
+    
+}
+.section4-contanier .section4-title a span{
+    color: var(--blush);
 }
 .title4-2{
     width: 742px;
@@ -35,12 +37,14 @@
     line-height: 20px;
     letter-spacing: 0%;
     font-size: 16px;
+    margin-t1op: 32px;
 }
 
 .section4-contacts {
     display: flex;
-    width: 1080px;
-    height: 592px;
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 0 auto;
     gap:32px;  
 }
 
@@ -59,15 +63,30 @@
     font-family: sans-serif;   
 }
 .name4{
+    font-family: "Inter Tight", sans-serif;
     width: 428px;
     height: 128px;
     font-size: 32px;
-    justify-content: center;
-    text-align: center;
+    margin-top: 56px;
     line-height: 32px;
     letter-spacing: -1.5%;
-    text-align: left;
+    vertical-align: middle;
     margin-bottom: 69px;
+    margin-left: 56px;
+}
+p {
+    margin: 0 auto;
+}
+.section4-contacts .section4-contacts-title p span{
+    color: var(--chianti);
+}
+.section4-contacts .section4-contacts-title p span 2{
+    color: var(--green);
+}
+:root{
+    --green: #576f35;
+    --chianti: #7a3145;
+    --blush: #d4bfc4;
 }
 .button-container{
     display: grid;
@@ -120,29 +139,9 @@
     color: white;
     
 }
-
-.title4-3{
-
-    color:#d4bfc4; 
-    width: 243px;
-    height: 20px;
-    font-size: 16px;
-    line-height: 100px;
-    letter-spacing: 0%;
-    margin-left: 32px;
-}
 .section4-title .title4 span{
     color: var(--blush);
 }
-.title4-4{
-    width: 386px;
-    height: 20px;
-    gap: 12px;
-    margin-left: -8px;
-    color: white;
-    line-height: 100px;  
-}
-
 .section4-contacts-social{
     
     background-color: #7a3145;
@@ -157,15 +156,41 @@
     text-align: center;
 }
 .pic{
-    width: 428px;
+    width: 460px;
     height: 352px;
     border-radius: 15px;
     color: #141414;
-    margin-top: 56px;
-    
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-bottom: 50px; 
 }
 .title4-3{
-
+    color:#d4bfc4; 
+    width: 243px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 100px;
+    letter-spacing: 0%;
+    margin-left: 32px;
 }
+.title4-4{
+    width: 386px;
+    height: 20px;
+    gap: 12px;
+    margin-left: -22px;
+    margin-top: 20px;
+    color: white;
+    line-height: 100px;  
+}
+/*MOBİL*/
+@media (min-width: 375px) {
 
-
+  }
+/*TABLET*/
+@media (min-width: 768px) {
+    
+  }
+  /* BİLGİSAYAR*/
+  @media (min-width: 1280px) {  
+    
+  }
