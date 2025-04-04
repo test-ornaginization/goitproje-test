@@ -1,196 +1,204 @@
-
- .section4-title , .section4-contacts{
-  
-    box-sizing:border-box;
-    max-width: 1280px;
-    margin: 0 auto;
+.YourOrder{
     padding: 100px;
-    gap: 52px 0;
-    background-color: #576f35;
+    background-color:var(--green)
 }
-
-.title4{
-    color:white;
-    width: 751px;
-    height: 128px;
-    line-height: 36px;
-    font-size: 40px;
-    letter-spacing: -1.5%;
-    text-decoration: none;  
-    margin-bottom: 50px;
-    
+.OrderHeader >h2{
+    text-transform: uppercase;
+    color:var(--white);
+    margin-bottom: 24px;
 }
-.section4-title{
-    width: 1280px;
-    height: 192px;
-    gap: 24px;
-    background-color:#576f35;
-    
+.OrderSpan{
+    color:var(--blush);
 }
-.section4-contanier .section4-title a span{
-    color: var(--blush);
+.OrderHeader>p{
+    color:var(--white);
+    margin-bottom: 52px;
 }
-.title4-2{
-    width: 742px;
-    height: 40px;
-    color: white;
-    line-height: 20px;
-    letter-spacing: 0%;
-    font-size: 16px;
-    margin-t1op: 32px;
-}
-
-.section4-contacts {
+.OrderSection{
     display: flex;
-   max-width: 1280px;
-   margin: 0 auto;
-   padding: 0 auto;
-    gap:32px;  
+    justify-content: center;
+    gap: 32px;
 }
-
-.section4-contacts-title{
+.OrderForm{
     width: 524px;
     height: 592px;
     border-radius: 30px;
-    top:52px;
-    right: 48px;
-    bottom: 52px;
-    left: 48px;
-    gap: 10px;
-    background-color: white;
-    justify-items: center;
-    font-weight: bold;
-    font-family: sans-serif;   
+    padding: 52px 48px;
+    background-color: var(--white);
 }
-.name4{
-    font-family: "Inter Tight", sans-serif;
-    width: 428px;
-    height: 128px;
-    font-size: 32px;
-    margin-top: 56px;
-    line-height: 32px;
-    letter-spacing: -1.5%;
-    vertical-align: middle;
-    margin-bottom: 69px;
-    margin-left: 56px;
+.Orderimg{
+    width: 524px;
+    height: 592px;
+    border-radius: 30px;
+    padding: 52px 48px;
+    background-color: var(--chianti);
 }
-p {
-    margin: 0 auto;
+.FormTitle > H3 {
+    margin-bottom: 52px;
+    text-transform: uppercase;
 }
-.section4-contacts .section4-contacts-title p span{
+.chaSpan{
     color: var(--chianti);
 }
-.section4-contacts .section4-contacts-title p span 2{
+.greenSpan{
     color: var(--green);
 }
-:root{
-    --green: #576f35;
-    --chianti: #7a3145;
-    --blush: #d4bfc4;
+.FormControl{
+    height: 308px;
+    display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap:24px;
 }
-.button-container{
-    display: grid;
-    width: 428px;
-    height: 232px;
-    top:52px;
-    right: 48px;
-    bottom: 52px;
-    left: 48px;
-    gap: 16px;
-    text-align:end;
-}
-.button4-name{
-    width: fixed;
+.form-input{
+    padding: 16px 338px 16px 16px;
+    width: 100%;
     height: 52px;
     border-radius: 30px;
-    top: 16px;
-    right: 345px;
-    bottom:16px;
-    left: 16px;
-    gap: 10px;
-    text-align:left;
-    background-color: white;
+    border: 1px solid var(--grey) ;
 }
-.button4-name-comment{
-    width: 428px;
+.form-textarea{
+    padding: 16px 346px 16px 16px;
+    width: 100%;
     height: 96px;
     border-radius: 15px;
-    top: 16px;
-    right: 345px;
-    bottom: 16px;
-    left: 16px;
-    gap: 10px;
-    text-align:left;
-    background-color: white;
-    
-   
+    border: 1px solid ;
+    border: 1px solid var(--grey)
 }
-.button4-name-send{
-    width: fixed;
+.form-input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0%;
+    line-height: 20px;
+    color:var(--black);
+  }
+  .form-textarea::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0%;
+    line-height: 20px;
+    color:var(--black);
+  }
+  .formButton{
     height: 52px;
+    width: 100%;
     border-radius: 30px;
-    top: 16px;
-    right: 346px;
-    bottom:16px;
-    left: 16px;
-    gap: 10px;
-    justify-content: flex-start;
-    background-color: #7a3145;
-    color: white;
-    
-}
-.section4-title .title4 span{
-    color: var(--blush);
-}
-.section4-contacts-social{
-    
-    background-color: #7a3145;
-    width: 524px;
-    height: 592px;
-    border-radius: 30px;
-    top:52px;
-    right: 48px;
-    bottom: 52px;
-    left: 48px;
-    gap: 10px 0;
+    border: 1px solid transparent;
+    pad: 16px 191px;
+    background-color: var(--chianti);
+  }
+.formButton{
+    font-weight:600px;
+    font-size:18px;
+    line-height:20px;
+    letter-spacing:-0.01em;
     text-align: center;
+    color: var(--white);
 }
-.pic{
-    width: 460px;
+  .imgOrder{
+    margin-bottom: 80px;
+    width: 100%;
     height: 352px;
     border-radius: 15px;
-    color: #141414;
-    margin-top: 35px;
-    margin-left: 35px;
-    margin-bottom: 50px; 
-}
-.title4-3{
-    color:#d4bfc4; 
-    width: 243px;
-    height: 20px;
-    font-size: 16px;
-    line-height: 100px;
-    letter-spacing: 0%;
-    margin-left: 32px;
-}
-.title4-4{
-    width: 386px;
-    height: 20px;
-    gap: 12px;
-    margin-left: -22px;
-    margin-top: 20px;
-    color: white;
-    line-height: 100px;  
-}
-/*MOBİL*/
-@media (min-width: 375px) {
+    object-fit: cover;
+    align-self: center;
+  }
+  .OrderP{
+    color: var(--blush);
+    margin-bottom: 16px;
+  }
+  .OrderText{
+    display: flex;
+    gap:12px;
+    text-transform:uppercase;
+    color: var(--white);
+  }
+  .OrderSocial{
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #FBFBFB;
+  }
+  .OrderSocial a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #FBFBFB;
+  }
+  .OrderSocial > li::after{
+    content: "/";
+    padding: 0px 12px;
+  }
+  .OrderSocial > li:last-child::after{
+    content: "";
+  }
 
+
+  @media (max-width: 374px) {
   }
-/*TABLET*/
-@media (min-width: 768px) {
-    
+  @media screen and (min-width: 375px) and (max-width: 767px){
+    .YourOrder{
+      padding: 80px 20px;
+    }
+    .YourOrder h2{
+      font-size: 48px;
+      line-height: 52px;
+    }
+    .YourOrder .body-1{
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .OrderSection{
+      flex-direction: column;
+    }
+    .OrderForm{
+      width: 100%;
+      padding: 40px 20px;
+    }
+    .Orderimg{
+      width: 100%;
+      padding: 40px 20px;
+      height: auto;
+    }
+    .imgOrder{
+      margin-bottom: 20px;
+    }
+    .form-input, .form-textarea{
+      padding: 14px 16px;
+    }
+    .FormTitle h3{
+      font-size: 28px;
+      line-height: 28px;
+    }
+    .OrderSocial{
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+    .OrderSocial > li::after{
+      padding: 0 8px;
+    }
   }
-  /* BİLGİSAYAR*/
-  @media (min-width: 1280px) {  
+  @media screen and (min-width: 768px) and (max-width: 1279px){
+    .YourOrder{
+      padding: 100px 64px;
+    }
+    .OrderSection{
+      flex-direction: column;
+    }
+    .OrderForm{
+      width: 100%;
+    }
+    .Orderimg{
+      width: 100%;
+    }
+    .FormTitle{
+      width: 440px;
+    }
     
   }

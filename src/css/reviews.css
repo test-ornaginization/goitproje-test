@@ -3,6 +3,7 @@
     background-color: var(--white);
     display: flex;
     flex-direction: column;
+    padding: 100px;
 }
 
 .reviews-header {
@@ -74,4 +75,40 @@
     text-indent: 20px;
     font-style: normal;
     color:var(--grey)
+}
+
+@media (max-width: 374px) {
+}
+@media screen and (min-width: 375px) and (max-width: 767px){
+    .container{
+        max-width: 375px;
+      }
+      .reviews-item{
+        padding: 80px 20px;
+      }
+      .card:nth-child(n+2){
+        display: none;
+      }
+      .reviews-header h2{
+        font-size: 48px;
+        line-height: 52px;
+      }
+      .reviews-header .body-1{
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .reviews-header{
+        width: 100%;
+      }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .container{
+    max-width: 768px;
+  }
+  .reviews-item{
+    padding: 100px 32px;
+  }
+  .card:nth-child(n+3){
+    display: none;
+  }
 }
